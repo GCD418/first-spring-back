@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: FirstBack
+  datasource:
+    url: jdbc:postgresql://ep-red-recipe-ac5n6y7r-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_5ywOKYkHpM3l
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
